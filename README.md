@@ -4,7 +4,7 @@
 
 ## Contributors
 
-* ... (Team Lead)
+* Anudit Verma (Team Lead)
 * Shivam Gupta
 * Sukriti Agarwal
 * Ajay Bhawariya
