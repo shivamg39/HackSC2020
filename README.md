@@ -7,4 +7,4 @@
 * ... (Team Lead)
 * Shivam Gupta
 * Sukriti Agarwal
-* ...
+* Ajay Bhawariya
