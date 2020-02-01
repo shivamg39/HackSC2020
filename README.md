@@ -6,5 +6,5 @@
 
 * ... (Team Lead)
 * Shivam Gupta
-* ...
+* Sukriti Agarwal
 * ...
