@@ -2,7 +2,7 @@
 $sql_host="127.0.0.1";
 $sql_username="root";
 $sql_password='';
-$sql_database="ShareCrumbs";
+$sql_database="test";
 function connect_db() {
 	global $sql_host, $sql_username, $sql_password, $sql_database;
 	$conn=new mysqli($sql_host,$sql_username,$sql_password);

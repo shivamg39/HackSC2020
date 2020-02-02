@@ -1,7 +1,7 @@
 <?php
 session_start();
 if( !isset( $_SESSION['email']) ) {
-	echo "You are not authorized to view this page. Go back <a href= './'>home</a>";
+	echo "You are not authorized to view this page. Go back <a href= '../selector.html'>home</a>";
 	exit();
 }
 require 'header.php'
