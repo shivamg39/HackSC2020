@@ -1,7 +1,7 @@
 {
-    "name": "DishTV",
-    "short_name" : "DishTV 📡",
-    "start_url": "/",
+    "name": "ShareCrumbs",
+    "short_name" : "ShareCrumbs",
+    "start_url": "/sharecrumbs/",
     "icons": [
         {
             "src": "logo-192.png",
