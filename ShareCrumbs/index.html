@@ -1,14 +1,104 @@
-<!-- Homepage for the website -->
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <title>ShareCrumbs - FeedTheNeedy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script defer src="crypto.js"></script>
+  <script defer src="site.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#8dc540">
+  <link rel="manifest" href="manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <style type="text/css">
+    .back-link a {
+      color: #4ca340;
+      text-decoration: none; 
+      border-bottom: 1px #4ca340 solid;
+    }
+    .back-link a:hover,
+    .back-link a:focus {
+      color: #408536; 
+      text-decoration: none;
+      border-bottom: 1px #408536 solid;
+    }
+    h1 {
+      height: 100%;
+      /* The html and body elements cannot have any padding or margin. */
+      margin: 0;
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 32px;
+      margin-bottom: 3px;
+    }
+    .entry-header {
+      text-align: left;
+      margin: 0 auto 50px auto;
+      width: 80%;
+      max-width: 978px;
+      position: relative;
+      z-index: 10001;
+    }
+    #demo-content {
+      padding-top: 100px;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .bg {
+      /* The image used */
+      background-image: url("img/splash.png");
+
+      /* Full height */
+      height: 100%; 
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <script type="text/javascript">
+    $('.enter_link').click(function () {
+      $(this).parent('#splashscreen').fadeOut(50);
+    });
+  </script>
+
 </head>
-<body>
+<body class="demo">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <!-- Demo content -->     
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <a href="./selector.html" class="enter_link"><div class="bg"></div></a>
 
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
