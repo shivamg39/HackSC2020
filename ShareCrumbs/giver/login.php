@@ -14,7 +14,7 @@ require 'header.php';
 				<form class="login100-form validate-form"  method='post' action='backend.php'>
 
 					<span class="login100-form-title p-b-26">
-						<img src="images/sharecrumbs.png" style="height: 140px">
+						&nbsp;GIVER<br /><img src="images/sharecrumbs.png" style="height: 140px">
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">

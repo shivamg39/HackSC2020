@@ -7,13 +7,11 @@ require 'header.php';
 
 		<div class="container-login100">
 
-			<div class="wrap-login100" style="padding: 60px 55px 33px 55px">
+			<div class="wrap-login100">
 
 				<form class="login100-form validate-form"  method='post' action='backend.php'>
 
-					<span class="login100-form-title p-b-26">
-						Sign Up
-					</span>
+					<span class="login100-form-title p-b-26">Giver &nbsp; | &nbsp; Sign Up</span>
 
 					<div class="wrap-input100">
 						<input class="input100" type="text" name="name">

@@ -11,13 +11,16 @@ require 'header.php';
 
 				<form class="login100-form validate-form"  method='post' action='backend.php'>
 
-					<span class="login100-form-title p-b-26">
-						Sign Up
-					</span>
+					<span class="login100-form-title p-b-26">Taker &nbsp; | &nbsp; Sign Up</span>
 
 					<div class="wrap-input100">
 						<input class="input100" type="text" name="name">
 						<span class="focus-input100" data-placeholder="Organization / Individual Name"></span>
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Name"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
