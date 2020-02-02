@@ -1,6 +1,6 @@
 <?php
 session_start(); //to ensure you are using same session
-if (isset($_SESSION['username'])){
+if (isset($_SESSION['email'])){
 	session_destroy(); //destroy the session
 	header("location:./login.php"); //to redirect back to "login.php" after logging out
 	exit();

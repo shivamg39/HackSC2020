@@ -28,7 +28,8 @@ if($_POST){
 			$sql = "Insert Into sharecrumbs_giver (name, email, password, address, phone_number) VALUES ('$name', '$email', '$passwordHashed', '$address', '$phone_number')";
 			$sql = $conn->query($sql);
 			if($sql){
-				echo "Registration succesful. You may <a href= '/'>login</a> now";
+				header('location: ./login.php');
+				// echo "Registration succesful. You may <a href= './login.php'>login</a> now";
 			//header('location: ./login.php');
 			}
 		//$sql = $sql->fetch_assoc();

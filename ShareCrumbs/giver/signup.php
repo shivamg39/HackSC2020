@@ -7,7 +7,7 @@ require 'header.php';
 
 		<div class="container-login100">
 
-			<div class="wrap-login100">
+			<div class="wrap-login100" style="padding: 60px 55px 33px 55px">
 
 				<form class="login100-form validate-form"  method='post' action='backend.php'>
 
