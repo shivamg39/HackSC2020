@@ -17,7 +17,7 @@ require 'header.php';
 
 					<div class="wrap-input100">
 						<input class="input100" type="text" name="name">
-						<span class="focus-input100" data-placeholder="Organization Name / Individual Name"></span>
+						<span class="focus-input100" data-placeholder="Organization / Individual Name"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">

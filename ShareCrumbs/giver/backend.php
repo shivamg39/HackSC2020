@@ -2,7 +2,7 @@
 if($_POST){
 	require 'db_key.php';
 	$conn = connect_db();
-	if(isset($_POST['register']) ){
+	if(isset($_POST['register']) ) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
@@ -44,7 +44,12 @@ if($_POST){
 			$sql = $sql->fetch_assoc();
 			if(password_verify($password, $sql['password'])){
 				session_start();
+				
 				$_SESSION['email'] = $email;
+				$_SESSION['name'] = $sql['name'];
+				$_SESSION['address'] = $sql['address'];
+				$_SESSION['phone_number'] = $sql['phone_number'];
+
 				echo 'You have successfully logged-in';
 				header('location: ./account.php');
 			}
