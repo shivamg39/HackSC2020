@@ -1,8 +1,6 @@
 <?php
-require 'db_key.php';
 require 'header.php';
 ?>
-
 <body>
 	
 	<div class="limiter">
@@ -14,12 +12,12 @@ require 'header.php';
 				<form class="login100-form validate-form"  method='post' action='backend.php'>
 
 					<span class="login100-form-title p-b-26">
-						&nbsp;TAKER<br/><a href="../selector.html"><img src="images/sharecrumbs.png" style="height: 140px"></a>
+						Add Items
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100" data-placeholder="Email"></span>
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="username">
+						<span class="focus-input100" data-placeholder="Username"></span>
 					</div>
 
 					<div class="wrap-input100">
@@ -42,7 +40,7 @@ require 'header.php';
 							Don’t have an account? &nbsp;
 						</span>
 
-						<a class="txt2" href="./signup.php">
+						<a class="txt2" href="#">
 							Sign Up
 						</a>
 					</div>
@@ -62,5 +60,29 @@ require 'header.php';
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
 
+</body>
+</html>
+
+<body>
+	<div class = 'container'>
+		<div>
+			<div><h1>Register your Account</h1></div>
+		</div>
+		<form action = 'backend.php' method = 'POST'>
+			<div class = 'p-5 m-5'>
+				<div class="form-group">
+					<label>Username:</label>
+					<input class = 'form-control w-50' type="text" name="username" required>
+					<label>Email:</label>
+					<input class = 'form-control w-50' type="email" name="email" required>
+					<label>Password:</label>
+					<input class = 'form-control w-50' type="password" name="password" required>
+					<div class ='text-center mt-3 w-50'>
+						<button class = 'btn btn-outline-info' type = 'submit' value = 'submit' name= 'register'>Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
 </body>
 </html>

@@ -20,7 +20,7 @@ require 'header.php'
 				<span class="login100-form-title p-b-26"  style="text-align: left;">
 					Welcome back, <?php echo $_SESSION['name']; ?>
 				</span>
-				<p>The following are some listing for people who are offering food!</p>
+				<p>The following are some listing of people who are offering food near you!</p>
 				<?php include("../giver/items.php"); ?>
 				
 			</div>

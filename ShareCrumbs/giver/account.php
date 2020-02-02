@@ -11,30 +11,18 @@ require 'header.php'
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<span class="login100-form-title p-b-26">
+				<div style="text-align: right;">
+					<a href="./logout.php">
+						<button type="button" class="btn btn-danger">Logout</button>
+					</a>
+				</div>
+				<p>&nbsp;</p>
+				<span class="login100-form-title p-b-26"  style="text-align: left;">
 					Welcome back, <?php echo $_SESSION['name']; ?>
 				</span>
-				<ul class="navbar-nav ml-auto" style="text-align: right;">
-					<li class="nav-item">
-						<a class="nav-link" href="./logout.php">Logout</a>
-					</li>
-				</ul>
-				
-				
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-
-				<a href="giver/login.php"><button type="button" class="btn btn-success btn-lg btn-block">GIVER</button></a>
-				
-				<p>&nbsp;</p>
-
-				<a href="taker/login.php"><button type="button" class="btn btn-primary btn-lg btn-block">TAKER</button></a>
-
-				<div class="text-center p-t-100">
-				</div>
+				<a href="./listing.php"><h4>Add a new Listing</h4></a>
+				<h4 style="color: #429348"><br />Your Previous Listings</h4>
+				<?php include("items_special.php"); ?>
 			</div>
 		</div>
 	</div>

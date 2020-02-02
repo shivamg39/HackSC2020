@@ -1,8 +1,6 @@
 <?php
-require 'db_key.php';
 require 'header.php';
 ?>
-
 <body>
 	
 	<div class="limiter">
@@ -11,40 +9,43 @@ require 'header.php';
 
 			<div class="wrap-login100">
 
-				<form class="login100-form validate-form"  method='post' action='backend.php'>
+				<form class="login100-form validate-form"  method='post' action='backend2.php'>
 
-					<span class="login100-form-title p-b-26">
-						&nbsp;TAKER<br/><a href="../selector.html"><img src="images/sharecrumbs.png" style="height: 140px"></a>
-					</span>
+					<span class="login100-form-title p-b-26" style="text-align: left">Add a new Listing</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+					<div class="wrap-input100">
 						<input class="input100" type="text" name="email">
 						<span class="focus-input100" data-placeholder="Email"></span>
 					</div>
 
 					<div class="wrap-input100">
-						<span class="btn-show-pass">
-							<i class="zmdi zmdi-eye"></i>
-						</span>
-						<input class="input100" type="password" name="password" id="password" autocomplete="off">
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<input class="input100" type="text" name="itemName">
+						<span class="focus-input100" data-placeholder="Item Name"></span>
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="number" name="quantity">
+						<span class="focus-input100" data-placeholder="Quantity"></span>
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="pickupTime" id="pickupTime">
+						<span class="focus-input100" data-placeholder="Pick up Time duration"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" type="submit" name="login" value= 'login' class="submit">Login</button>
+							<button class="login100-form-btn" type="submit" name="register" value='register' class="submit">Register</button>
 						</div>
 					</div>
-
-					<div class="text-center p-t-80">
+					<div class="text-center p-t-60">
 						<span class="txt1">
-							Don’t have an account? &nbsp;
+							Don’t want a new listing? &nbsp; <a class="txt2" href="./account.php">
+							Cancel</a>
 						</span>
 
-						<a class="txt2" href="./signup.php">
-							Sign Up
-						</a>
+						
 					</div>
 				</form>
 			</div>
